@@ -76,62 +76,6 @@ NODE_ENV=development
 npm run build
 ```
 
-### 5. Start the application
-
-**Development mode:**
-```bash
-# Terminal 1: Start backend server
-npm run server
-
-# Terminal 2: Start frontend (from frontend directory)
-cd frontend
-npm run dev
-```
-
-**Production mode:**
-```bash
-npm start
-```
-
-## 📁 Project Structure
-
-```
-mern-chat-app/
-├── backend/
-│   ├── controllers/      # Route controllers
-│   ├── db/              # Database connection
-│   ├── middleware/      # Auth middleware
-│   ├── models/          # MongoDB schemas
-│   ├── routes/          # API routes
-│   ├── socket/          # Socket.io configuration
-│   ├── utils/           # Utility functions
-│   └── server.js        # Main server file
-├── frontend/
-│   ├── src/
-│   │   ├── components/  # React components
-│   │   ├── context/     # React Context
-│   │   ├── hooks/       # Custom hooks
-│   │   ├── pages/       # Page components
-│   │   ├── utils/       # Utility functions
-│   │   └── zustand/     # Zustand stores
-│   └── package.json
-└── package.json
-```
-
-## 🔌 API Endpoints
-
-### Authentication
-- `POST /api/auth/signup` - Register a new user
-- `POST /api/auth/login` - Login user
-- `POST /api/auth/logout` - Logout user
-
-### Users
-- `GET /api/users` - Get all users
-- `GET /api/users/:id` - Get user by ID
-
-### Messages
-- `GET /api/messages/:id` - Get messages with a user
-- `POST /api/messages/send/:id` - Send a message
 
 ## 🧑‍💻 Usage
 
@@ -150,60 +94,6 @@ mern-chat-app/
 3. Press Enter or click Send
 4. Messages appear in real-time for both users
 
-## 🐛 Troubleshooting
 
-### MongoDB Connection Error
-- Ensure your MongoDB URI is correct in `.env`
-- Check that your IP is whitelisted in MongoDB Atlas
-- Verify the password is correct
 
-### Port Already in Use
-- Default port is 5000 for backend
-- Change the PORT in `.env` if needed
 
-### npm packages install fails
-```bash
-rm -rf node_modules package-lock.json
-npm install
-```
-
-## 🔧 Available Scripts
-
-From root directory:
-```bash
-npm run server    # Start backend with nodemon
-npm start         # Start backend in production
-npm run build     # Install all dependencies and build frontend
-```
-
-From frontend directory:
-```bash
-npm run dev       # Start Vite dev server
-npm run build     # Build for production
-npm run preview   # Preview production build
-```
-
-## 🚀 Deployment
-
-### Deploy to Heroku or Vercel
-See the original project for deployment instructions.
-
-## 📝 License
-
-This project is licensed under the ISC License - see the LICENSE file for details.
-
-## 👨‍💻 Author
-
-Created based on the tutorial by [Bursa Ormez](https://github.com/burakorkmez)
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to submit issues and enhancement requests.
-
-## 📞 Support
-
-For issues and questions, please open an issue on the GitHub repository.
-
----
-
-**Happy Chatting! 💬**
