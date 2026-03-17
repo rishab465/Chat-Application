@@ -42,39 +42,6 @@
 - MongoDB Atlas account (free tier available)
 - Git
 
-## 🚀 Installation & Setup
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/burakorkmez/mern-chat-app.git
-cd mern-chat-app
-```
-
-### 2. Install root dependencies
-```bash
-npm install
-```
-
-### 3. Setup Environment Variables
-
-Create a `.env` file in the root directory:
-```
-PORT=5000
-MONGO_DB_URI=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/?appName=Cluster0
-JWT_SECRET=your_super_secret_random_string_here_123
-NODE_ENV=development
-```
-
-**Getting your MongoDB URI:**
-1. Go to [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-2. Create a free account and cluster
-3. Get your connection string
-4. Replace `<username>` and `<password>` with your credentials
-
-### 4. Install dependencies for both backend and frontend
-```bash
-npm run build
-```
 
 
 ## 🧑‍💻 Usage
@@ -95,5 +62,7 @@ npm run build
 4. Messages appear in real-time for both users
 
 
+### Live Demo
+(Live)[https://chat-application-bgqj.onrender.com/]
 
 
