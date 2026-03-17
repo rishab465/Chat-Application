@@ -63,6 +63,6 @@
 
 
 ### Live Demo
-(Live)[https://chat-application-bgqj.onrender.com/]
+[https://chat-application-bgqj.onrender.com/]
 
 
